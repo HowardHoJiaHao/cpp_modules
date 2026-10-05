@@ -10,7 +10,7 @@ int main (void)
     
     while (true)
     {
-        std::cout << "Enter Command (ADD, LIST, EXIT)" << std::endl;    
+        std::cout << "Enter Command (ADD, SEARCH, EXIT)" << std::endl;
         if (!std::getline(std::cin, line))
         {
             std::cout << "EOF detected, Exiting" << std::endl;
@@ -18,7 +18,7 @@ int main (void)
         }
         if (line == "ADD")
             AlvinPhonebook.addContact();
-        else if (line == "LIST")
+        else if (line == "SEARCH")
             AlvinPhonebook.showContact();
         else if (line == "EXIT")
             break;

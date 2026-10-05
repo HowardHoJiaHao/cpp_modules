@@ -19,6 +19,7 @@
 #include <iomanip> //(1) std::fixed and std::setprecision
 #include <cmath> // std::isinf and std::innan
 #include <limits> //(3) std::min(), std::max(),
+#include <cctype> // std::isprint, std::isdigit
 
 class ScalarConverter
 {

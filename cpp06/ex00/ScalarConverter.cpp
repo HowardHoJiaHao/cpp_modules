@@ -30,9 +30,9 @@ ScalarConverter::~ScalarConverter(){}
 
 bool ScalarConverter::isChar(const std::string& literal)
 {
-	
-	if (literal.length() == 1 && std::isprint(literal[0]))
-		return (literal.length() == 1 && std::isprint(literal[0]));
+	// a single digit such as "0" is an int literal, not a char
+	if (literal.length() == 1 && std::isprint(literal[0]) && !std::isdigit(literal[0]))
+		return (true);
 	return (literal.length() ==  3 && literal[0] == '\'' && literal[2] == '\'');
 }
 
@@ -243,7 +243,6 @@ void ScalarConverter::convert(const std::string& literal)
 	{
 		case CHAR:
 		{
-			std::cout <<" This i "<< literal[0] << std::endl;
 			if (literal.length() == 3)
 				value = static_cast<double>(literal[1]);
 			else 

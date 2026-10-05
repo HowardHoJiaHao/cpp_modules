@@ -31,7 +31,7 @@ int	main(void)
 	std::cout << "\n --- Arithmetic tests --- " << std::endl;
 
 	Fixed p(2.5f);
-	Fixed q(0);
+	Fixed q(1.25f); // not 0: the subject allows a division by 0 to crash
 
 	std::cout << "p: " << p << " q: " << q << std::endl;
 	std::cout << "p + q = " << (p + q) << std::endl;
