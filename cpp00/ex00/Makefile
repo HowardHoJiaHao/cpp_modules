@@ -5,8 +5,8 @@ SRCS = megaphone.cpp
 OBJS = $(SRCS:.cpp=.o)
 NAME = megaphone
 
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXGLAGS) -o $@ $(OBJS)
+$(NAME): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJS)
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@

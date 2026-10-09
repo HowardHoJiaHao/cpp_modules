@@ -6,12 +6,6 @@ Dog::Dog():Animal("Dog")
     std::cout << "Dog " << _type << " Constructor Created" << std::endl;
 }
 
-Dog::Dog(const std::string &type):Animal(type)
-{
-    this->_brain = new Brain();
-    std::cout << "Dog " << type <<" Constructor Created" << std::endl;
-}
-
 Dog& Dog::operator=(const Dog& copy)
 {
     if (this == &copy)

@@ -5,7 +5,7 @@ Weapon::Weapon(std::string Type):type(Type)
     std::cout << "A Weapon " << Type << " is created." << std::endl;
 }
 
-const std::string Weapon::getType(void)
+const std::string& Weapon::getType(void) const
 {
     return (this->type);
 }

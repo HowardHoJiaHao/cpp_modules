@@ -23,7 +23,7 @@ int main()
 	form = someRandomIntern.makeForm("robotomy request", " bender");
 	if (form)
 	{
-		boss.signAForm(*form);
+		boss.signForm(*form);
 		boss.executeForm(*form);
 		delete form;
 	}
@@ -33,7 +33,7 @@ int main()
 	form = someRandomIntern.makeForm("presidential pardon", "criminal");
 	if (form)
 	{
-		boss.signAForm(*form);
+		boss.signForm(*form);
 		boss.executeForm(*form);
 		delete form;
 	}

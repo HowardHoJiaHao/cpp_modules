@@ -24,21 +24,3 @@ std::string Zombie::getName()
     return (this->name);
 }
 
-Zombie *zombieHorde(int N, std::string name)
-{
-    if (N <= 0)
-        return (NULL);
-    Zombie *horde = new Zombie[N];
-    // for (int i = 0; i < N; i++)
-    // {
-    //     std::cout << "Zombie "<< horde[i].getName() << " created." << std::endl;
-    // }
-    for (int i = 0; i < N; i++)
-    {
-        horde[i].setName(name);
-        std::cout << "Zombie "<< i << " created." << std::endl;
-        horde[i].announce();
-    }
-    return (horde);
-}
-

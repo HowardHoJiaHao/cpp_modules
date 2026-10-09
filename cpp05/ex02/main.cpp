@@ -27,14 +27,14 @@ int main()
 	boss.executeForm(tree);
 
 	std::cout << "\n === test2 : sign with low grade ==== \n";
-	intern.signAForm(pardon);
+	intern.signForm(pardon);
 
 	std::cout << "\n ==== test3 : proper signing ==== \n";
 
 	//treat derived object as base
-	boss.signAForm(tree);
-	boss.signAForm(robot);
-	boss.signAForm(pardon);
+	boss.signForm(tree);
+	boss.signForm(robot);
+	boss.signForm(pardon);
 	
 
 	std::cout << "\n ==== test4: execution with low grade ==== \n";
@@ -51,7 +51,7 @@ int main()
 	std::cout << "\n ==== test7 : polymorphism === \n";
 	AForm* poly = new ShrubberyCreationForm("poly_tree");
 
-	boss.signAForm(*poly);
+	boss.signForm(*poly);
 	boss.executeForm(*poly);
 
 	delete poly;

@@ -10,8 +10,8 @@ typename T::iterator easyfind(T& container, int value)
 template<typename T>
 typename T::const_iterator easyfind(const T& container, int value)
 {
-	typename T::iterator iter = std::find(container.begin(), container.end(), value);
-	if (iter == container.end)
+	typename T::const_iterator iter = std::find(container.begin(), container.end(), value);
+	if (iter == container.end())
 	// You would use std::runtime_error for things that aren't the programmer's fault, but still break the program:
 		throw std::runtime_error("value not found");
 	return iter;

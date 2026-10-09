@@ -10,18 +10,18 @@ class MutantStack : public std::stack<T>
 		// typedef - alias with other name
 		// typename - unknown type yet
 		// container_type - the underlying stack that it uses , vector, list, deque?
-		typedef typename std::stack<T>::container_type::iterator iter;
-		typedef typename std::stack<T>::container_type::const_iterator const_iter;
+		typedef typename std::stack<T>::container_type::iterator iterator;
+		typedef typename std::stack<T>::container_type::const_iterator const_iterator;
 
 		MutantStack();
 		MutantStack(const MutantStack& other);
 		MutantStack& operator=(const MutantStack& other);
 		~MutantStack();
 
-		iter begin();
-		iter end();
-		const_iter begin() const;
-		const_iter end() const;
+		iterator begin();
+		iterator end();
+		const_iterator begin() const;
+		const_iterator end() const;
 
 		// typename std::stack<T>::container_type::iterator begin();
 		// typename std::stack<T>::container_type::iterator end();

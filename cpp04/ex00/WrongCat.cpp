@@ -5,11 +5,6 @@ WrongCat::WrongCat():WrongAnimal("WrongCat")
     std::cout << "WrongCat " << _type << " Constructor Created" << std::endl;
 }
 
-WrongCat::WrongCat(const std::string &type):WrongAnimal(type)
-{
-    std::cout << "WrongCat " << type <<" Constructor Created" << std::endl;
-}
-
 WrongCat& WrongCat::operator=(const WrongCat& copy)
 {
     if (this == &copy)

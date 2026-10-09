@@ -1,5 +1,5 @@
-#ifndef WHATEVER_TPP
-# define WHATEVER_TPP
+#ifndef WHATEVER_HPP
+# define WHATEVER_HPP
 
 #include <iostream>
 
@@ -7,7 +7,6 @@
 template <typename T>
 void swap (T &a,T &b)
 {
-	std::cout << "run tmeplet " << std::endl;
 	T temp = a;
 	a = b;
 	b = temp;

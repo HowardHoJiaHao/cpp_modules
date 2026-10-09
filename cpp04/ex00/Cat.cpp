@@ -6,11 +6,6 @@ Cat::Cat():Animal("Cat")
     std::cout << "Cat " << _type << " Constructor Created" << std::endl;
 }
 
-Cat::Cat(const std::string &type):Animal(type)
-{
-    std::cout << "Cat " << type <<" Constructor Created" << std::endl;
-}
-
 Cat& Cat::operator=(const Cat& copy)
 {
     if (this == &copy)

@@ -8,8 +8,8 @@
 
 int main (void)
 {
-	Animal *i = new Cat("funny cat");
-	Animal *j = new Dog("funnydog");
+	Animal *i = new Cat();
+	Animal *j = new Dog();
 
 	i->makeSound();
 	j->makeSound();

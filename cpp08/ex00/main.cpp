@@ -16,6 +16,10 @@ int main()
 		std::vector<int>::iterator iter = easyfind(vec, 20);
 		std::cout << "Found it vector: " << *iter << std::endl;
 
+		const std::vector<int>& cvec = vec;
+		std::vector<int>::const_iterator citer = easyfind(cvec, 30);
+		std::cout << "Found in const vector: " << *citer << std::endl;
+
 		std::list<int> lst;
 		lst.push_back(5);
 		lst.push_back(15);
