@@ -7,6 +7,8 @@ The C++ modules are a series of ten short modules that introduce **C++** and **o
 
 All the code is written in **C++98** and compiled with `c++ -Wall -Wextra -Werror -std=c++98`. Each exercise has its own folder and `Makefile`.
 
+Each module folder also has the subject (`en.subject.pdf`) and a `README.md` that explains every exercise, with example output.
+
 ## Modules
 | Module | Topics | Exercises |
 |:---:|---|---|
