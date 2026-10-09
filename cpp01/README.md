@@ -64,11 +64,11 @@ A `Weapon` with a `type`, a `getType()` that returns a const reference and a `se
 
 Both refer to the original `Weapon`, so calling `setType()` on the club changes what the human attacks with:
 ```
-Bob attack with their crude spiked club
-Bob attack with their some other type of club
+Bob attacks with their crude spiked club
+Bob attacks with their some other type of club
 ...
-Jim attack with their crude spiked club
-Jim attack with their some most powerful type of club
+Jim attacks with their crude spiked club
+Jim attacks with their some most powerful type of club
 ```
 
 ### ex04 – Sed is for losers
